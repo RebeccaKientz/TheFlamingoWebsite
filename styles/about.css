@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*logo/brandName*/
+
+header a .logo {
+  height: 25%;
+}
+
+/*navigation*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #272727;
+  color: white;
+}
+
+.navbar-li {
+  height: 100%;
+}
+
+.navbar-li ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar-li li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.pages:hover {
+  color: #ff1fa9;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  padding: 0;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* main */
+
+.wrapper {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+main {
+  padding: 10% 0 0 0;
+}
+img::after {
+  content: "";
+  position: absolute;
+}
+
+/* section */
+
+section {
+  text-align: center;
+}
+section h1 {
+  font-size: 180%;
+  padding: 8% 0;
+}
+section p {
+  font-size: 120%;
+  padding: 0 15% 20% 15%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+footer h2 {
+  font-size: 22px;
+  padding: 6% 0;
+}
+footer a {
+  text-decoration: none;
+  background: #272727;
+  white-space: pre-wrap;
+  font-size: 18px;
+  padding: 1%;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+footer a:hover {
+  color: #ff1fa9;
+}
+footer p {
+  font-size: 14px;
+  padding: 8% 0;
+}
+
+/* media */
+
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-li {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-li ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-li ul li {
+    text-align: center;
+  }
+
+  .navbar-li ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-li .active {
+    display: flex;
+  }
+
+  main {
+    /*padding-top: 40%;*/
+  }
+  section {
+    font-size: 70%;
+    padding: 8% 10%;
+  }
+  p {
+    font-size: 20%;
+  }
+}
+@media (max-width: 740px) {
+  .town {
+    font-size: 50%;
+  }
+
+  .something {
+    font-size: 85%;
+  }
+}

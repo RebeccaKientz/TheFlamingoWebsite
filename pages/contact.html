@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>The Flamingo Motel</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-brand" href="#"
+        ><img
+          class="logo"
+          src="../images/the_Flamingo_Motel_logo.png"
+          alt="The Flamingo Motel Logo"
+      /></a>
+      <a href="#" class="toggle-button">
+        <span class="bar" role="menuitem"></span>
+        <span class="bar" role="menuitem"></span>
+        <span class="bar" role="menuitem"></span>
+      </a>
+      <nav class="navbar-li" role="doc-index">
+        <ul>
+          <li role="menuitem">
+            <a href="../index.html" class="pages">Home</a>
+          </li>
+          <li role="menuitem">
+            <a href="../pages/about.html" class="pages">About</a>
+          </li>
+          <li role="menuitem">
+            <a href="pages/contact.html" class="pages">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="landingImg" role="contentinfo">
+        <img class="wrapper"
+        src="../images/beauty-in-nature-dawn-evening-1576657.jpg" / alt="Sunset
+        over a lake">
+        <!--Photo by Rachel Baskin Photography from Pexels-->
+      </section>
+      <section class="pageContent" role="contentinfo">
+        <h1>We Would Like to Hear From You</h1>
+
+        <p>
+          If you require more information about The Flamingo Motel, would like
+          to make a reservation for an upcoming visit or have a comment or
+          suggestion about a recent stay with us, please contact or suggestion
+          about a recent stay with us, please contact us and we will be happy to
+          assist you.
+        </p>
+      </section>
+      <section class="contactInfo" role="contentinfo">
+        <p>The Flamingo Motel</p>
+        <p>718 East Sherman Avenue</p>
+        <p>Coeur d'Alene, Idaho 83814</p>
+
+        <p><a href="tel:208-664-2159">Tel: 208-664-2159</a></p>
+        <p><a href="tel:208-664-210">Fax: 208-664-210</a></p>
+
+        <p>
+          <a href="mailto: flamingomotelidaho@hotmail.com"
+            >Email: flamingomotelidaho@hotmail.com</a
+          >
+        </p>
+      </section>
+      <form class="form-fields" action="script.js" method="post">
+        <article class="formInput">
+          <label for="firstName">First Name *</label>
+          <input
+            type="text"
+            id="fName"
+            class="contactField"
+            name="first name"
+            role="combobox"
+          />
+        </article>
+
+        <article class="formInput">
+          <label for="last name">Last Name *</label>
+          <input
+            type="text"
+            id="lastName"
+            class="contactField"
+            name="last name"
+            role="combobox"
+          />
+        </article>
+        <article class="formInput">
+          <label for="email">Email *</label>
+          <input
+            type="text"
+            id="email"
+            class="contactField"
+            name="email"
+            role="combobox"
+          />
+        </article>
+        <article class="formInput">
+          <label for="telephone">Telephone</label>
+          <input
+            type="text"
+            id="telephone"
+            class="contactField"
+            name="telephone"
+            role="combobox"
+          />
+        </article>
+
+        <article class="formInput">
+          <label for="comments" id="comment">Comments:</label>
+          <textarea
+            rows="6"
+            cols="50"
+            class="contactField"
+            role="combobox"
+          ></textarea>
+        </article>
+        <button value="Submit" aria-label="Sumbit">Submit</button>
+      </form>
+    </main>
+    <footer role="contentinfo">
+      <h2>CALL TODAY! 208-664-2159</h2>
+      <a href="#"> CHECK AVAILABLITY AND MAKE A RESERVATION</a>
+      <p>718 East Sherman Avenue Coeur d' Alene, Idaho 83814</p>
+    </footer>
+    <script src="script/index.js"></script>
+  </body>
+</html>

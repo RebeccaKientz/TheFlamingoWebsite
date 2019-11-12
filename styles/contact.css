@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #272727;
+}
+
+/*logo/brandName*/
+
+header a .logo {
+  height: 25%;
+}
+
+/*navigation*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #272727;
+  color: white;
+}
+
+.navbar-li {
+  height: 100%;
+}
+
+.navbar-li ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar-li li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+/*.navbar-li li:hover {
+    color: #ef3d59;
+  }*/
+.pages:hover {
+  color: #e8175d;
+  /*background-color: #5e5e5c;*/
+}
+
+.toggle-button {
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  padding: 0;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Main */
+
+.wrapper {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+main {
+  padding: 6% 0 0 0;
+  text-align: center;
+}
+#landingImage img::after {
+  content: "";
+  position: absolute;
+}
+
+/*p a {
+  text-decoration: none;
+  color: #2c2918;
+  padding: 1.2%;
+}
+p a:hover {
+  color: white;
+  background: #333333;
+}*/
+
+/* section */
+
+section h1 {
+  font-size: 180%;
+  padding: 8% 0;
+}
+section p {
+  font-size: 120%;
+  padding: 3% 0 3% 0;
+  margin: 0 auto;
+}
+.pageContent p {
+  padding: 3% 0 3% 0;
+  margin: 0 10%;
+}
+.contactInfo p a {
+  text-decoration: none;
+  color: #2c2918;
+  padding: 1.2%;
+}
+.contactInfo p a:hover {
+  color: white;
+  background: #333333;
+  padding: 0 1.7% 0 1.7%;
+}
+.contactInfo p {
+  padding: 0 2% 0 2%;
+  margin: 0 auto;
+}
+
+/*     FORM     */
+form {
+  padding: 3% 0 3% 0;
+  margin: 8%;
+  background: lightgray;
+}
+article {
+  align-items: flex;
+}
+
+label {
+  align-self: center;
+  font-size: 18px;
+  padding: 0 1.2% 0 1%;
+}
+input {
+  width: 70%;
+  margin: 1% 1%;
+  box-shadow: 2px 2px 2px #707070;
+}
+
+.formInput {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 8% 2% 0;
+  margin: 0 auto;
+}
+
+button {
+  background: #272727;
+  color: white;
+  padding: 1.5% 5% 1.5% 5%;
+  border-radius: 4px;
+  font-size: 150%;
+  box-shadow: 2px 2px 2px #707070;
+  align-items: baseline;
+  justify-content: center;
+}
+button:hover {
+  color: #e8175d;
+}
+label#comment {
+  align-items: flex-start;
+}
+
+textarea {
+  padding: 30px 80px 30px 80px;
+  box-shadow: 2px 2px 2px #707070;
+  border: 1px solid #707070;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+footer h2 {
+  font-size: 22px;
+  padding: 6% 0;
+}
+footer a {
+  text-decoration: none;
+  background: #272727;
+  white-space: pre-wrap;
+  font-size: 18px;
+  padding: 1.6%;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+footer a:hover {
+  color: #e8175d;
+}
+footer p {
+  font-size: 14px;
+  padding: 8% 0;
+}
+
+/* media */
+
+@media (max-width: 400px) {
+  body {
+    font-size: 75%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-li {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-li ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-li ul li {
+    text-align: center;
+  }
+
+  .navbar-li ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-li .active {
+    display: flex;
+  }
+  label {
+    font-size: 50%;
+  }
+  input,
+  textarea {
+    width: 50%;
+    margin-top: 0;
+  }
+  /*.formInput {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4% 1% 0;
+    margin: 0 auto;
+  }*/
+
+  main {
+    /*padding-top: 40%;*/
+  }
+  section {
+    font-size: 70%;
+    padding: 8% 10%;
+  }
+  p {
+    font-size: 20%;
+  }
+}
+@media (max-width: 740px) {
+  .town {
+    font-size: 50%;
+  }
+
+  .something {
+    font-size: 85%;
+  }
+}
